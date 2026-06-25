@@ -1,3 +1,6 @@
+https://orcid.org/my-orcid?orcid=0009-0004-1872-1153
+https://doi.org/10.5281/zenodo.20846641
+-----------
 # GRA Nullification Equilibrium / Равновесие обнуления GRA
 
 [English](#english) | [Русский](#русский)
