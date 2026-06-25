@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRA Nullification Equilibrium</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>GRA Обнуление / Равновесие</h1>
+        <div class="controls">
+            <label>Размерность: <input type="number" id="dim" value="3" min="1" max="10"></label>
+            <label>Шагов: <input type="number" id="steps" value="10" min="1" max="50"></label>
+            <button id="runBtn">Запустить симуляцию</button>
+        </div>
+        <div class="charts">
+            <canvas id="foamChart" width="400" height="200"></canvas>
+            <canvas id="piChart" width="400" height="200"></canvas>
+        </div>
+        <div id="output">
+            <p><strong>Конечная пена:</strong> <span id="finalPhi">-</span></p>
+            <p><strong>Конечное состояние π':</strong> <span id="finalPi">-</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

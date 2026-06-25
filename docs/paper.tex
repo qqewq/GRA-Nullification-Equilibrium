@@ -1,0 +1,89 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{GRA Chiral Nullification Equilibrium \ \medskip Равновесие хирального обнуления в GRA}
+\author{qqewq}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\selectlanguage{english}
+We present a formal framework for the chiral nullification dynamics, where the nullification operator $\mathcal{N}$ maps a system state $(\pi, w, s)$ into a chiral pair $(R, L)$ while setting $w=s=0$. The reverse process generates new foam $\Phi$. Equilibrium is achieved when the hierarchical stability rank $N$ satisfies $\partial^N \Phi / \partial k^N = 0$. We provide mathematical derivations and practical applications in natural and social sciences.
+
+\selectlanguage{russian}
+Представлена формальная структура хиральной динамики обнуления, где оператор $\mathcal{N}$ переводит состояние системы $(\pi, w, s)$ в хиральную пару $(R, L)$, обнуляя $w$ и $s$. Обратный процесс генерирует новую пену $\Phi$. Равновесие достигается, когда ранг иерархической стабильности $N$ удовлетворяет $\partial^N \Phi / \partial k^N = 0$. Приведены математические выводы и практические применения в естественных и гуманитарных науках.
+\end{abstract}
+
+\section{Introduction / Введение}
+The concept of "foam" $\Phi$ represents internal contradiction or entropy in a multi-agent or hierarchical system. The nullification operator $\mathcal{N}$ is designed to reduce $\Phi$ to zero by transforming the policy $\pi$ into a chiral pair $(R, L)$, which are mirror images under reflection operator $Z$. However, the system never stays at zero foam; the chiral symmetry breaking generates new foam, creating a dynamic equilibrium.
+
+\section{Mathematical Framework / Математическая структура}
+
+\subsection{Foam Definition / Определение пены}
+Let $\pi$ be a policy vector, $w$ weights, and $s$ state vector. Foam is defined as:
+\begin{equation}
+\Phi(\pi, w, s) = \|\pi - w\| + \|w - s\| + \|s - \pi\|.
+\end{equation}
+This measures the total pairwise inconsistency.
+
+\subsection{Chiral Mapping / Хиральное отображение}
+The reflection operator $Z$ acts component-wise: $(Z v)_i = (-1)^i v_i$ (for simplicity). Then:
+\begin{equation}
+R = \pi, \quad L = Z\pi.
+\end{equation}
+The pair $(R, L)$ is chiral if $\pi \neq Z\pi$ under any allowed transformation.
+
+\subsection{Nullification Operator / Оператор обнуления}
+\begin{equation}
+\mathcal{N}(\pi, w, s) = \left( \begin{pmatrix} R \\ L \end{pmatrix}, 0, 0 \right).
+\end{equation}
+This simultaneously eliminates $w$ and $s$ (weights and state) and embeds the policy into a higher-dimensional chiral space.
+
+\subsection{Hierarchical Stability / Иерархическая стабильность}
+For a hierarchy of levels $k$, we define the rank $N$ as the smallest integer such that the $N$-th derivative of $\Phi$ with respect to $k$ vanishes:
+\begin{equation}
+N = \min\{ n \mid \partial^n \Phi / \partial k^n = 0 \}.
+\end{equation}
+At this point, the system switches from particle-like stability to wave-like behaviour.
+
+\subsection{Wave Nullification / Волновая обнулёнка}
+The wave function is given by:
+\begin{equation}
+\psi(k) = e^{-\lambda \Phi(k)},
+\end{equation}
+which describes the probability amplitude of the system being in a particular foam state.
+
+\subsection{Equilibrium Condition / Условие равновесия}
+Equilibrium between nullification and foam generation occurs when the system oscillates around $\Phi=0$ with amplitude governed by $N$. The balance is expressed as:
+\begin{equation}
+\frac{d\Phi}{dt} = -\alpha \Phi + \beta \psi(k),
+\end{equation}
+where $\alpha$ is the nullification rate and $\beta$ the generation rate. Steady state $\Phi_{eq} = \beta/\alpha \, e^{-\lambda \Phi_{eq}}$ (implicit).
+
+\section{Applications / Применения}
+\subsection{Natural Sciences / Естественные науки}
+- Plasma confinement: minimizing foam corresponds to stabilizing instabilities.
+- Superconductor search: multiverse levels filter contradictory models.
+
+\subsection{Humanities / Гуманитарные науки}
+- Collective intelligence: swarm subject formation through zero-foam agents.
+- Decision-making: conflict resolution by nullifying contradictory objectives.
+
+\section{Conclusion / Заключение}
+The GRA chiral nullification equilibrium provides a universal framework for describing systems that alternate between coherence (zero foam) and exploration (foam generation). The interplay between the nullification operator and hierarchical stability rank $N$ offers a quantitative tool for modelling stability in complex adaptive systems.
+
+\section*{References / Ссылки}
+\begin{enumerate}
+\item GRA-Core-new-Unified-Hierarchical-Stability-Library (github.com/qqewq)
+\item GRA-Multiverse-Final (github.com/qqewq)
+\item GRA-Chiral-Nullification-Math (github.com/qqewq)
+\end{enumerate}
+
+\end{document}
